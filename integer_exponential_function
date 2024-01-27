@@ -1,0 +1,14 @@
+# defining a function  with parameters (base and exp)
+def exponent (base, exp):
+    num = exp # assigning the value of exp to the variable num
+    result = 1 # intitializing the result variable to 1
+
+    while num > 0: # starting a loop as long as num is greater than 0
+        result = result * base # multiplying the current result by the base
+        num = num - 1
+
+    # printing the result, indicating the base, exponent, and the calculated result
+    print(base, "raised to the power of", exp, "is: ", result)
+
+# calling the function using 2 as the base and 3 as the exponent
+exponent(2, 3)
